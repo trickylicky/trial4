@@ -1,4 +1,33 @@
 h1{
-    color: aqua;
     text-align: center;
+    border: solid red 25px;
+    padding: 01%;
+    margin: 75px;
+
+}
+h2{
+    text-align: center;
+}
+.body{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1200px-Flag_of_Ghana.svg.png);
+    
+}
+p{
+    text-align: center;
+}
+input{
+    padding: 10px 15px 5px 15px
+    display: block;
+    background-color: red;
+    
+}
+input[type="radio"]{
+    display:inline-block;
+}
+.place{
+    width: 45%;
+    border: solid green 20px;
+    text-align: center;
+    margin-left: 10cm;
+    font-size: 1cm;
 }
