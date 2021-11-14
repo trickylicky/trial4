@@ -1,24 +1,31 @@
 h1{
     text-align: center;
-    border: solid red 25px;
+    border: solid blue 55px;
+    border-radius: 90%;
     padding: 01%;
     margin: 75px;
-
+font-size: 590%;
+background-color: white;
 }
 h2{
     text-align: center;
 }
+.paragraph{
+    font-size: 0.9cm;
+    color: white;
+
+}
 .body{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1200px-Flag_of_Ghana.svg.png);
+    background-image: url(https://www.aljazeera.com/wp-content/uploads/2017/03/70a7249527f445f8bb0f8ed91e0b8bdd_18.jpeg?resize=770%2C513);
     
 }
 p{
     text-align: center;
 }
 input{
-    padding: 10px 15px 5px 15px
-    display: block;
+    display; block ;
     background-color: red;
+    max-height: 85%;
     
 }
 input[type="radio"]{
@@ -26,9 +33,11 @@ input[type="radio"]{
 }
 .place{
     width: 45%;
-    border: solid green 20px;
+    border: solid green 29px;
+    background-color:whitesmoke;
     text-align: center;
     margin-left: 10cm;
     font-size: 1cm;
     color: blue;
+    border-radius: 25%;
 }
