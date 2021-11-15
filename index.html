@@ -24,11 +24,7 @@
     <div class="place">
         <div class="day">
             <label for="day">Day</label>
-            <select name="gender" id="gender" required>
-                <option></option>
-                <option>Male</option>
-                <option>Female</option>
-            </select>
+            
         </div>
     <div class="month">
       <label for="month">Month</label>
@@ -39,11 +35,15 @@
          <label for="year">Year</label>
     <input type="text" id="year"placeholder="year">
     <p id="yearerror"></p>
-    <div class="GENDER">
-        <label for="gender"><strong>GENDER</strong></label>
-    <input name = "grp" type="radio" placeholder="male">male 
-    <input name = "grp" type="radio" placeholder="female">female 
+    <label for="gender">Gender</label>
+    <div>
+        <select name="gender" id="gender" required>
+            <option></option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
     </div>
+<br>
     <input type="button" onclick="path()" value="GET YOUR AKAN NAME">
     </div>
 </form>
