@@ -14,8 +14,8 @@ function output() {
   var cc = (yy - 1) / 100 + 1;
   var results = parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
 
-  var boy = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-  var girl = ["Akosua", " Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  var males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  var females = ["Akosua", " Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   if (document.getElementById("gender1").checked) {
     var gender = 'male';
 
@@ -33,52 +33,49 @@ function output() {
   if (male) {
     if (results == 1) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Monday ,your Akan name is " + boy[1]);
+        alert("you were born on a Monday ,your Akan name is " + males[1]);
     } else if (results == 2) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Tuesday ,your Akan name is " + boy[2]);
+        alert("you were born on a Tuesday ,your Akan name is " + males[2]);
     } else if (results == 3) {
       document.getElementById("results").innerHTML =
-        alert("You were born on Wednesday ,your Akan name is " + boy[3]);
+        alert("You were born on a Wednesday ,your Akan name is " + males[3]);
     } else if (results == 4) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Thursday,your Akan name is " + boy[4]);
+        alert("you were born on a Thursday,your Akan name is " + males[4]);
     } else if (results == 5) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Friday,your Akan name is " + boy[5]);
+        alert("you were born on a Friday,your Akan name is " + males[5]);
     } else if (results == 6) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Saturday,your Akan name is " + boy[6]);
+        alert("you were born on a Saturday,your Akan name is " + males[6]);
     } else if (results == 0) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Sunday,your Akan name is " + boy[0]);
+        alert("you were born on a Sunday,your Akan name is " + males[0]);
     }
   }
-
-
-  //Female function
   else if (female) {
     if (results == 1) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Monday ,your Akan name is " + girl[1]);
+        alert("you were born on a Monday ,your Akan name is " + females[1]);
     } else if (results == 2) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Tuesday,your Akan name is " + girl[2]);
+        alert("you were born on a Tuesday,your Akan name is " + females[2]);
     } else if (results == 3) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Wednesday,your Akan name is " + girl[3]);
+        alert("you were born on a Wednesday,your Akan name is " + females[3]);
     } else if (results == 4) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Thursday,your Akan name is " + girl[4]);
+        alert("you were born on a Thursday,your Akan name is " + females[4]);
     } else if (results == 5) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Friday,your Akan name is " + girl[5]);
+        alert("you were born on a Friday,your Akan name is " + females[5]);
     } else if (results == 6) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Saturday,your Akan name is " + girl[6]);
+        alert("you were born on a Saturday,your Akan name is " + females[6]);
     } else if (results == 0) {
       document.getElementById("results").innerHTML =
-        alert("you were born on Sunday,your Akan name is " + girl[0]);
+        alert("you were born on a Sunday,your Akan name is " + females[0]);
     }
   } else {
     alert("please enter your credentials properly");
