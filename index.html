@@ -7,7 +7,7 @@
     <title>AKAN NAMING</title>
     
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS/script.js"></script>
+    
 </head>
 <body>
 <div class="body">
@@ -23,31 +23,34 @@
 <form action="results.html">
     <div class="place">
         <div class="day">
-            <label for="day">Day</label>
+            <label for="day">Day of Birth:</label><br>
+            <input type="number" id="day" placeholder = "DAY" required><br>
             
         </div>
-    <div class="month">
-      <label for="month">Month</label>
-    <input type="text"id="month" placeholder="month">
-    <p id="montherror"></p>
-    </div>
-    <div class="year">
-         <label for="year">Year</label>
-    <input type="text" id="year"placeholder="year">
-    <p id="yearerror"></p>
-    <label for="gender">Gender</label>
+        <label for="month">Month of Birth:</label><br>
+        <input type="number" id="month" placeholder = "MONTH" required><br>
+        <label for="year">Year of Birth:</label><br>
+        <input type="number" id="year" placeholder = "YEAR" required><br><br><br>
+    <!-- <label for="gender">Gender</label>
     <div>
         <select name="gender" id="gender" required>
             <option></option>
             <option>Male</option>
             <option>Female</option>
         </select>
-    </div>
+    </div> -->
+    <label>GENDER</label>
+        <input type="radio" name="gender" id="gender1" value="male"> Male
+        <input type="radio" name="gender" id="gender2" value="female"> Female<br><br>
+        <input type="submit" value="Submit" class="btn btn-primary btn-lg" onclick="output()">
+    </form>
 <br>
     <input type="button" onclick="path()" value="GET YOUR AKAN NAME">
     </div>
+    
 </form>
+
 </div>
-   
+<script src="JS/script.js"></script>
 </body>
 </html>

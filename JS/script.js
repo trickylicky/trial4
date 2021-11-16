@@ -70,3 +70,48 @@
 
 
 // }
+ function output(){
+     var day =parseInt( document.getElementById("day").value);
+     var year = parseInt(document.getElementById("year").value);
+     var mm = parseInt( document.getElementById("month").value);
+
+     var YY=
+     var MM=
+     var CC=
+     var DD=
+     var results =((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )%7
+
+     if(year <= 0 || year > 2021){
+         alert("enter correct year!") ;
+     }
+     else if(year ==" "){
+         alert("enter correct values");
+     }
+     else{
+         d.setYear(year);
+     }
+    
+
+     if(month <= 0 || month > 12){
+         alert("enter correct month!");
+     }
+     else if(month ==" "){
+         alert("enter correct values");
+     }
+     else{
+         d.setMonth(month);
+     }
+
+
+
+     if(day <= 0 || day > 31){
+         alert("enter correct day!");
+     }
+     else if(day ==" "){
+         alert("enter correct values");
+     }
+     else{
+         d.setDate(day);
+     }
+
+ }

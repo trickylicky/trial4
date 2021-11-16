@@ -11,7 +11,7 @@ backdrop-filter: blur(10px);
 }
 h2{
     text-align: center;
-    color: beige;
+    color: aqua;
 }
 .paragraph{
     font-size: 0.9cm;
@@ -39,7 +39,7 @@ input[type="radio"]{
     border: solid green 29px;
  
     text-align: center;
-    margin-left: 10cm;
+    margin-left: 25%;
     font-size: 1cm;
     color: blue;
     border-radius: 25%;
