@@ -75,10 +75,10 @@
      var year = parseInt(document.getElementById("year").value);
      var mm = parseInt( document.getElementById("month").value);
 
-     var YY=
-     var MM=
-     var CC=
-     var DD=
+     let YY=  (year)%100
+     let MM=  mm
+     let CC= parseInt(year/100)
+     let DD= day
      var results =((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )%7
 
      if(year <= 0 || year > 2021){
@@ -113,5 +113,71 @@
      else{
          d.setDate(day);
      }
+     var boy = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+     var girl = ["Akosua", " Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  if (document.getElementById("gender1").checked) {
+    var gender = 'male';
+
+  } 
+  else if (document.getElementById("gender2").checked) {
+    var gender = 'female';
+//   if (mm < 1 || mm > 12 || mm == 2 && dd > 29) {
+//     alert("INVALID MONTH");
+//   } else if (dd < 1 || dd > 31) {
+//     alert("INVALID DAY");
+//   }
+
+
+  if (male) {
+    if (results == 1) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Monday ,your Akan name is " + boy[1]);
+    } else if (results == 2) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Tuesday ,your Akan name is " + boy[2]);
+    } else if (results == 3) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Wednesday ,your Akan name is " + boy[3]);
+    } else if (results == 4) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Thursday,your Akan name is " + boy[4]);
+    } else if (results == 5) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Friday,your Akan name is " + boy[5]);
+    } else if (results == 6) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Saturday,your Akan name is " + boy[6]);
+    } else if (results == 0) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Sunday,your Akan name is " + boy[0]);
+    }
+  }
+else if (female) {
+    if (results == 1) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Monday ,your Akan name is " + girl[1]);
+    } else if (results == 2) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Tuesday,your Akan name is " + girl[2]);
+    } else if (results == 3) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Wednesday,your Akan name is " + girl[3]);
+    } else if (results == 4) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Thursday,your Akan name is " + girl[4]);
+    } else if (results == 5) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Friday,your Akan name is " + girl[5]);
+    } else if (results == 6) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Saturday,your Akan name is " + girl[6]);
+    } else if (results == 0) {
+      document.getElementById("results").innerHTML =
+        alert("Born on Sunday,your Akan name is " + girl[0]);
+    }
+  } else {
+    alert("enter your credentials please");
+  }
+}
 
  }
