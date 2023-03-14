@@ -1,4 +1,4 @@
-alert("WELCOME TO AKAN NAMING HOPE YOU HAVE FUN!");
+
 
 function output() {
 
