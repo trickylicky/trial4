@@ -20,6 +20,39 @@
         </ul>
     </nav>
 
+    <div class="naming">
+        <h1 style="font-size: 75px;">AKAN NAMING SYSTEM</h1>
+        <div class="aboutAkan">
+            <p>In this website known as <strong>""AKAN NAMING SYSTEM"</strong>you will be able to determine your name according to the day you were born in.<br/>This is a Ghanian system,that follows this rules.</p><br>
+            <strong> IF MALE :</strong>
+            <strong>Sunday:Kwasi,Monday:Kwandwo,Tuesday:Kwabena,Wednesday:Kwaku,Thursday:yaa,Friday: Kofi,Saturday:Kwame</strong><br> <strong>IF FEMALE:</strong>Sunday:Akosua,Monday:Adwoa,Tuesday:Abenaa,Wednesday:Akua,Thursday:Yaa,Friday:Afua,Saturday:Ama
+            </p>
+        </div>
+        <h2>ENTER YOUR BIRTH DATE:</h2>
+        <form action="#">
+            <form action="#" id="form"> 
+                <div class="place">
+                        <div class="day">
+                            <label for="day">Day of Birth:</label><br>
+                            <input type="number" id="day" placeholder = "DAY" min="1" max="31" required><br>
+                            
+                        </div>
+                    <label for="month">Month of Birth:</label><br>
+                        <input type="number" id="month" placeholder = "MONTH" max="12"  required><br>
+                        <label for="year">Year of Birth:</label><br>
+                        <input type="number" id="year" placeholder = "YEAR" min="1899" max="2099" required><br><br><br>
+                    
+                    <label>GENDER</label>
+                        <input type="radio" name="gender" id="gender1" value="male"> Male
+                        <input type="radio" name="gender" id="gender2" value="female"> Female<br><br>
+                        <input type="submit" value="Submit" class="btn btn-primary btn-lg" onclick="output()">
+                </div>
+            </form><br>
+        </form>
+        <div class="knowName"></div>
+       </div>
+    </div>
+
    <div class="content-akan">
     <div class="akan-community">
         <div class="section-1">
@@ -28,36 +61,7 @@
         </div>
     </div>
     
-    <h1 style="font-size: 75px;">AKAN NAMING SYSTEM</h1>
-    <div class="aboutAkan">
-        <p>In this website known as <strong>""AKAN NAMING SYSTEM"</strong>you will be able to determine your name according to the day you were born in.<br/>This is a Ghanian system,that follows this rules.</p><br>
-        <strong> IF MALE :</strong>
-        <strong>Sunday:Kwasi,Monday:Kwandwo,Tuesday:Kwabena,Wednesday:Kwaku,Thursday:yaa,Friday: Kofi,Saturday:Kwame</strong><br> <strong>IF FEMALE:</strong>Sunday:Akosua,Monday:Adwoa,Tuesday:Abenaa,Wednesday:Akua,Thursday:Yaa,Friday:Afua,Saturday:Ama
-        </p>
-    </div>
-    <h2>ENTER YOUR BIRTH DATE:</h2>
-    <form action="#">
-        <form action="#" id="form"> 
-            <div class="place">
-                    <div class="day">
-                        <label for="day">Day of Birth:</label><br>
-                        <input type="number" id="day" placeholder = "DAY" min="1" max="31" required><br>
-                        
-                    </div>
-                <label for="month">Month of Birth:</label><br>
-                    <input type="number" id="month" placeholder = "MONTH" max="12"  required><br>
-                    <label for="year">Year of Birth:</label><br>
-                    <input type="number" id="year" placeholder = "YEAR" min="1899" max="2099" required><br><br><br>
-                
-                <label>GENDER</label>
-                    <input type="radio" name="gender" id="gender1" value="male"> Male
-                    <input type="radio" name="gender" id="gender2" value="female"> Female<br><br>
-                    <input type="submit" value="Submit" class="btn btn-primary btn-lg" onclick="output()">
-            </div>
-        </form><br>
-    </form>
-    <div class="knowName"></div>
-   </div>
+   
     <script src="./JS/change.js"></script>
 </body>
 </html>

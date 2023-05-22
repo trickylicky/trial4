@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 body{
     background-color: #000;
@@ -31,6 +32,13 @@ nav a{
 .left-nav li:hover{
     font-size: 2.5pc;
     border-bottom: 2.3px solid red;
+}
+.naming h1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .section-1{
     display: flex;
