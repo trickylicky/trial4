@@ -39,7 +39,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/002/579/832/original/ghana-officially-flag-free-vector.jpg);
+    background-color: #212121c7;
     background-position: 20px;
     color: rgb(255, 0, 0);
     text-shadow: 2px 5px 10px green;
